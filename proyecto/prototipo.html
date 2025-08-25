@@ -13,8 +13,29 @@
     }
 
     h1 {
-      margin: 20px 0;
+      margin: 20px 0 10px 0;
       color: #333;
+    }
+
+    .sheet-link {
+      margin: 5px 0;
+    }
+
+    .sheet-link a {
+      font-size: 16px;
+      font-weight: bold;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .sheet-link a:hover {
+      text-decoration: underline;
+    }
+
+    .sheet-name {
+      margin: 0 0 20px 0;
+      font-style: italic;
+      color: #555;
     }
 
     .svg-container {
@@ -33,9 +54,20 @@
   </style>
 </head>
 <body>
-  <h1>Mis géneros musicales a través del tiempo </h1>
-  
+  <h1>Mis géneros musicales a través del tiempo</h1>
+
+  <!-- Hipervínculo -->
+  <div class="sheet-link">
+    <a href="https://docs.google.com/spreadsheets/d/1B4OvttuD6MbPQUTM3jdjJlPp3rvy21gy2Or7nUW7gpY/edit?gid=0#gid=0" target="_blank">
+      Ver hoja en Google Sheets
+    </a>
+  </div>
+
+  <!-- Nombre de la hoja -->
+  <p class="sheet-name">Dataset de canciones</p>
+
   <div class="svg-container">
+    <!-- Insertamos el SVG -->
     <object type="image/svg+xml" data="Generos.svg"></object>
   </div>
 </body>
